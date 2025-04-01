@@ -27,25 +27,35 @@
     <h1>JS Basics - 2.1- Arrow Functions - Level 2 </h1>
 
     <strong> Exercici 4</strong>
-    <p>Funció de fletxa dins d'un loop: Crea una funció anomenada printNumbers que accepti un array de números i utilitzi un
-    loop for per imprimir cada número a la consola utilitzant una funció de fletxa.</p>
+    <p>Funció de fletxa dins d'un loop: Crea una funció anomenada printNumbers que accepti un array de números i
+        utilitzi un
+        loop for per imprimir cada número a la consola utilitzant una funció de fletxa.</p>
     <div class="answer">
-    
+        const printNumbers = (array) => {
+        for (let i = 0; i < array.length; i++) { const printNumber=(array)=> console.log(array[i]);
+            printNumber(array);
+            }
+            };
+
     </div>
 
 
     <strong> Exercici 5</strong>
-    <p>Funció de fletxa amb 'setTimeout': Crea una funció de fletxa que imprimeixi un missatge a la consola després d'esperar 3
-    segons.</p>
+    <p>Funció de fletxa amb 'setTimeout': Crea una funció de fletxa que imprimeixi un missatge a la consola després
+        d'esperar 3
+        segons.</p>
     <div class="answer">
-  
+        const getMessage = () =>
+        setTimeout(() => {
+        console.log("Hola despues de 1 segundo");
+        }, 1000);
     </div>
 
 
 
 
 
-    <script src="Level-3.js"></script>
+    <script src="Level-2.js"></script>
 </body>
 
 </html>
