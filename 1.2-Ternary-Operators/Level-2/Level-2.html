@@ -38,7 +38,26 @@
 
     </p>
     <div class="answer">
+        const isPositiveOrNegative = (num) => {
+        <br> return num === 0
+        <br> ? `${num} is equal to 0`
+        <br> : num > 0
+        <br> ? `${num} is a positive number`
+        <br> : `${num} is a negative number`;
+        };
 
+    </div>
+
+    <div class="answer">
+        const findMaximum = (num1, num2, num3) => {
+        <br> if (num1 === num2 && num2 === num3) return `All numbers are equals.`;
+        <br>
+        <br> let maximum = num1;
+        <br> maximum > num2 ? maximum : (maximum = num2);
+        <br> maximum > num3 ? maximum : (maximum = num3);
+        <br>
+        <br> return `${maximum} is the highest number. `;
+        };
 
     </div>
 
