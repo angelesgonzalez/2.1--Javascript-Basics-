@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Basics - 1.1 - Level 1 </title>
+    <style>
+        body {
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 150px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .answer {
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JS Basics - 1.1 - Level 1 </h1>
+
+    <strong> Exercici 1</strong>
+    <p>Conversió de funcions: Tens una funció add que accepta dos paràmetres i retorna la seva suma. Converteix-la en
+        una
+        funció de fletxa. Per exemple: function add(a, b) {return a + b;}.</p>
+    <div class="answer">
+        const add = (a, b) => a + b;
+    </div>
+
+
+    <strong> Exercici 2</strong>
+    <p>Funció de fletxa sense paràmetres: Crea una funció de fletxa anomenada randomNumber que no necessiti paràmetres i
+        que
+        retorni un número aleatori entre 0 i 100.</p>
+    <div class="answer">
+        const getRandomNumber = () => Math.floor(Math.random() * 101);
+    </div>
+
+
+    <strong> Exercici 3</strong>
+    <p>Ús de 'this' en les funcions de fletxa: Crea una classe person que tingui una propietat name i una funció greet
+        que
+        utilitzi una funció de fletxa. La funció ha d'imprimir una salutació que inclogui el nom de la persona. Per
+        exemple:
+        console.log(Hola, ${this.name});.
+    </p>
+    <div class="answer">
+        class Person {
+        constructor(personName) {
+        this.personName = personName;
+        this.greet = () => console.log(`Hello, ${this.personName}`);
+        }
+        }
+    </div>
+
+
+
+    <script src="Level-1.js"></script>
+</body>
+
+</html>
