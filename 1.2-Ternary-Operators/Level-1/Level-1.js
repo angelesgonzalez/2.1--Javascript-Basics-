@@ -9,8 +9,9 @@ console.log(isAllowedToDrive(18)); // Allowed to drive
 //Exercise 2
 
 const compareNumbers = (num1, num2) => {
-	if (num1 === num2) return `${num1} & ${num2} are equals.`;
-	return num1 > num2
+	return num1 === num2
+		? `${num1} & ${num2} are equals.`
+		: num1 > num2
 		? `${num1} is higher than ${num2}`
 		: `${num2} is higher than ${num1} `;
 };

@@ -45,9 +45,10 @@
         gran'.</p>
     <div class="answer">
         const compareNumbers = (num1, num2) => {
-        <br> if (num1 === num2) return `${num1} & ${num2} are equals.`;
-        <br> return num1 > num2
-        <br>? `${num1} is higher than ${num2}`
+        <br> return num1 === num2
+        <br>? `${num1} & ${num2} are equals.`
+        <br> : num1 > num2
+        <br> ? `${num1} is higher than ${num2}`
         <br> : `${num2} is higher than ${num1} `;
         };
 
