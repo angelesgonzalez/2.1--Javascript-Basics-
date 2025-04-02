@@ -1,5 +1,18 @@
-// !Exercici 1
-// Operador Spread en Arrays: Crea dues arrays, array1 i array2. Utilitza l'operador spread per a crear una tercera array que contingui tots els elements de array1 i array2.
+// !Exercise 1
 
-// !Exercici 2
-// Operador Rest en Funcions: Crea una funció 'suma' que utilitzi l'operador rest per a acceptar un nombre indeterminat d'arguments i retornar la seva suma.
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [6, 7, 8, 9, 10];
+const array3 = [...array1, ...array2];
+
+// !Exercise 2
+
+function sum(...nums) {
+	let result = 0;
+	let array = nums;
+	for (let i = 0; i < array.length; i++) {
+		result += array[i];
+    }
+    return result;
+}
+
+console.log(sum(1,2,3,4,5)) // 15
