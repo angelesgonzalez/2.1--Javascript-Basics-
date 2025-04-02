@@ -26,9 +26,20 @@
     <h1>1.3-Callbacks - Level 3 </h1>
 
     <strong> Exercici 5</strong>
-    <p></p>
+    <p>Escriu una funció processarCadena que accepti dos paràmetres: una cadena de caràcters i una funció de callback.
+        La
+        funció processarCadena ha de convertir la cadena a majúscules i llavors invocar la funció de callback amb la
+        cadena
+        transformada.</p>
     <div class="answer">
-
+        const processString = (string, callback) => {
+        <br>let stringToUppercase = string.toUpperCase();
+        <br> callback(stringToUppercase);
+        <br> };
+        <br>
+        <br> processString(`Otra Prueba`, (string) => {
+        <br> console.log(`String a mayusculas: ${string}`);
+        });
 
     </div>
 
