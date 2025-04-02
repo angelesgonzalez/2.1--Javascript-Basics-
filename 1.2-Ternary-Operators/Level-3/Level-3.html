@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 150px;
+            justify-content: center;
+        }
+
+        .answer {
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <title>1.2-Ternary-Operators-Level-3</title>
+</head>
+
+<body>
+    <h1>1.2-Ternary-Operators-Level-3 </h1>
+
+    <strong> Exercici 4</strong>
+    <p>
+
+        Operador ternari dins un bucle: Escriu una funció parOImpar que accepti un array de números i utilitzi un bucle
+        per a
+        recórrer l'array. Dins del bucle, utilitza l'operador ternari per a determinar si cada número és parell o
+        imparell.
+
+    </p>
+    <div class="answer">
+
+        const isEvenOrOdd = (array) => {
+        <br> let result = ``;
+        <br>
+        <br>for (let i = 0; i < array.length; i++) { <br> result += array[i] % 2 === 0
+            <br>? `${array[i]} is even. `
+            <br>: `${array[i]} is
+            odd. `; }
+            <br>return result;
+            <br>};
+    </div>
+
+
+
+
+    <script src="Level-3.js"></script>
+</body>
+
+</html>
