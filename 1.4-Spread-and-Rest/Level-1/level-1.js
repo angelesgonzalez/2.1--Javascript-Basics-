@@ -11,8 +11,8 @@ function sum(...nums) {
 	let array = nums;
 	for (let i = 0; i < array.length; i++) {
 		result += array[i];
-    }
-    return result;
+	}
+	return result;
 }
 
-console.log(sum(1,2,3,4,5)) // 15
+console.log(sum(1, 2, 3, 4, 5)); // 15
