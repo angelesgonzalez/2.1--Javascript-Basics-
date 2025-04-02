@@ -1,4 +1,4 @@
-// !Exercici 1
+// !Exercise 1
 
 const getProcessed = (num, callback) => {
 	return callback(num);
@@ -6,7 +6,7 @@ const getProcessed = (num, callback) => {
 
 getProcessed(12, (num) => num + num);
 
-// !Exercici 2
+// !Exercise 2
 
 const getCalculation = (num1, num2, callback) => {
 	return callback(num1, num2);

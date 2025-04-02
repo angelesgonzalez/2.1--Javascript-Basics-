@@ -1,4 +1,4 @@
-// !Exercici 5
+// !Exercise 5
 
 const processString = (string, callback) => {
 	let stringToUppercase = string.toUpperCase();
