@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 150px;
+            justify-content: center;
+        }
+
+        .answer {
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <title>1.4- Spread & Rest - Level - 2 </title>
+</head>
+
+<body>
+    <h1>1.4- Spread & Rest - Level - 2 </h1>
+
+    <strong> Exercise 3</strong>
+    <p> Copiant objectes amb Spread: Crea un objecte 'objecte1'. Després crea un segon objecte, 'objecte2', que sigui
+        una còpia
+        de 'objecte1' utilitzant l'operador spread. Canvia una propietat de 'objecte2' i comprova que 'objecte1' no ha
+        canviat.</p>
+    <div class="answer">
+
+        const user = {
+        <br> id: 1,
+        <br> name: "Alex",
+        <br> age: 28,
+        <br> email: "alex@example.com",
+        <br> };
+        <br>
+        <br> const user2 = { ...user, age: 29 };
+
+    </div>
+
+    <strong> Exercise 4</strong>
+    <p>Rest en Destructuring: Crea una array amb diversos elements. Utilitza destructuring i l'operador rest per a
+        assignar els
+        primers dos elements a variables, i després assignar la resta dels elements a una tercera variable.
+    </p>
+    <div class="answer">
+        const elements = ["a string", 1, true, "another string", 2, 3, 4, 5];
+        <br> const [firstElement, secondElement, ...everythingElse] = elements;
+
+
+    </div>
+
+    <script src="Level-1.js"></script>
+</body>
+
+</html>
