@@ -21,3 +21,10 @@ const found = numbersToFind.find((num) => num > 10); //11
 
 // !Exercici 4
 // Reduce: Teniu una array de números [13, 7, 8, 21]. Fes servir la funció reduce per a calcular la suma total dels números.
+
+const arrayToReduce = [13, 7, 8, 21];
+
+const total = arrayToReduce.reduce(
+	(accumulator, currentValue) => accumulator + currentValue,
+	0
+);
