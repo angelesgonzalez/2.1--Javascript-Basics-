@@ -1,13 +1,20 @@
 // !Exercici 1
-// forEach: Teniu una array de noms. Utilitza forEach per a imprimir cada nom a la consola: let noms = ['Anna', 'Bernat', 'Clara'];
+//
 
 const names = ["Anna", "Bernat", "Clara"];
-names.forEach(element => console.log(element)) 
+names.forEach((element) => console.log(element));
 
 // !Exercici 2
-// for-of: Teniu una array de noms. Utilitza un bucle for-of per a imprimir cada nom a la consola: let noms = ['Anna', 'Bernat', 'Clara'];
 
-const namesForOf= ["Anna", "Bernat", "Clara"];
+const namesForOf = ["Anna", "Bernat", "Clara"];
+
+for (const element of namesForOf) {
+	console.log(element);
+}
 
 // !Exercici 3
-// filter: Teniu una array de números. Utilitza filter per a crear una nova array que només contingui els números parells. let numeros = [1, 2, 3, 4, 5, 6];
+
+const numbers = [1, 2, 3, 4, 5, 6];
+const evenNumbers = numbers.filter((num) => {
+	if (num % 2 === 0) return num;
+});

@@ -25,20 +25,42 @@
 <body>
     <h1>1.6- Array Loops - 1 </h1>
 
-    <strong> Exercise</strong>
-    <p> 
+    <strong> Exercise 1 </strong>
+    <p>
+        forEach: Teniu una array de noms. Utilitza forEach per a imprimir cada nom a la consola: let noms = ['Anna',
+        'Bernat',
+        'Clara'];
     </p>
     <div class="answer">
-  
+        const names = ["Anna", "Bernat", "Clara"];
+        <br> names.forEach((element) => console.log(element));
 
     </div>
 
-    <strong> Exercise </strong>
+    <strong> Exercise 2 </strong>
     <p>
-
+        for-of: Teniu una array de noms. Utilitza un bucle for-of per a imprimir cada nom a la consola: let noms =
+        ['Anna',
+        'Bernat', 'Clara'];
     </p>
     <div class="answer">
-       
+        for (const element of namesForOf) {
+        <br> console.log(element);
+        }
+    </div>
+
+    <strong> Exercise 3 </strong>
+    <p>
+        filter: Teniu una array de números. Utilitza filter per a crear una nova array que només contingui els números
+        parells.
+        let numeros = [1, 2, 3, 4, 5, 6];
+    </p>
+    <div class="answer">
+        const numbers = [1, 2, 3, 4, 5, 6];
+        <br> const evenNumbers = numbers.filter((num) => {
+        <br> if (num % 2 === 0) return num;
+        <br> });
+
     </div>
 
     <script src="Level-1.js"></script>
