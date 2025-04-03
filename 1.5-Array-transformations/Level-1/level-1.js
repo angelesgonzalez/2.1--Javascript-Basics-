@@ -12,14 +12,14 @@ const evenNumbers = numbers.filter((num) => {
 	if (num % 2 === 0) return num;
 });
 
-// !Exercici 3
+// !Exercise  3
 // Find: Teniu una array de números [1, 10 , 8, 11]. Utilitza la funció find per a trobar el primer número que és major a 10.
 
 const numbersToFind = [1, 10, 8, 11];
 
 const found = numbersToFind.find((num) => num > 10); //11
 
-// !Exercici 4
+// !Exercise  4
 // Reduce: Teniu una array de números [13, 7, 8, 21]. Fes servir la funció reduce per a calcular la suma total dels números.
 
 const arrayToReduce = [13, 7, 8, 21];
