@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 150px;
+            justify-content: center;
+        }
+
+        .answer {
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <title>1.6- Array Loops - 2</title>
+</head>
+
+<body>
+    <h1>1.6- Array Loops - 2 </h1>
+
+    <strong> Exercise 1 </strong>
+    <p>
+        for-in: Teniu un objecte amb parells clau-valor: let obj = { nom: Ona, edat: 25, ciutat: 'Barcelona' };
+        Utilitza un
+        bucle for-in per a imprimir a la consola cada clau i el seu valor corresponent.
+    </p>
+    <div class="answer">
+        const object = { firstName: `Ona`, age: 25, city: `Barcelona` };
+        <br>
+        <br> for (const property in object) {
+        <br> console.log(`${property}: ${object[property]}`);
+        <br> }
+
+    </div>
+
+    <strong> Exercise 3 </strong>
+    <p>
+        for-of amb break: Teniu una array de números. Utilitza un bucle for-of per a imprimir a la consola els
+        números fins a
+        trobar el número 5, llavors atura el bucle: let numeros = [1, 2, 3, 4, 5, 6];
+    </p>
+    <div class="answer">
+        const numbers = [1, 2, 3, 4, 5, 6];
+        <br>
+        <br> for (const number of numbers) {
+        <br> console.log(number);
+        <br> if (number === 5) break;
+        <br> }
+    </div>
+
+    <script src="Level-2.js"></script>
+</body>
+
+</html>
