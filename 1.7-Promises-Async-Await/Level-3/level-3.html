@@ -27,19 +27,27 @@
 
     <strong> Exercise</strong>
     <p>
+        Promise.all: Crea dues promeses que es resolguin després de 2 i 3 segons, respectivament. Utilitza
+        Promise.all per a
+        esperar que ambdues promeses es resolguin, i imprimeix els resultats a la consola.
     </p>
     <div class="answer">
 
+        const waitingForPromises = async () => {
+        <br> try {
+        <br> const allPromises = await Promise.all([promise1, promise2]);
+        <br> console.log(allPromises);
+        }
+        <br> catch (error) {
+        <br> console.log(error);
+        <br> }
+        };
+        <br>
+        <br> waitingForPromises();
 
     </div>
 
-    <strong> Exercise </strong>
-    <p>
 
-    </p>
-    <div class="answer">
-
-    </div>
 
     <script src="Level-3.js"></script>
 </body>
