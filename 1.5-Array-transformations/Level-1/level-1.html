@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 150px;
+            justify-content: center;
+        }
+
+        .answer {
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <title>1.5- Array Transformations Level - 1</title>
+</head>
+
+<body>
+    <h1>1.5- Array Transformations Level - 1 </h1>
+
+    <strong> Exercise 1 </strong>
+    <p>
+        Map: Teniu un array de números [1, 2, 3, 4]. Crea una nova array que contingui el quadrat de cada número.
+    </p>
+    <div class="answer">
+        const numbers = [1, 2, 3, 4];
+        <br> const squareNumbers = numbers.map((number) => number * number);
+
+    </div>
+
+    <strong> Exercise 2 </strong>
+    <p>
+        Filter: Teniu una array de números [1, 2, 3, 4]. Crea una nova array que només contingui els números parells.
+
+    </p>
+    <div class="answer">
+        const numbersToFilter = [1, 2, 3, 4];
+        <br> const evenNumbers = numbers.filter((num) => {
+        <br> if (num % 2 === 0) return num;
+        <br> });
+
+    </div>
+
+    <strong> Exercise 3 </strong>
+    <p>
+        Find: Teniu una array de números [1, 10 , 8, 11]. Utilitza la funció find per a trobar el primer número que és
+        major a
+        10.
+
+    </p>
+    <div class="answer">
+        <br> const numbersToFind = [1, 10, 8, 11];
+        <br>
+        <br> const found = numbersToFind.find((num) => num > 10); //11
+
+    </div>
+
+
+    <strong> Exercise 4 </strong>
+    <p>
+        Reduce: Teniu una array de números [13, 7, 8, 21]. Fes servir la funció reduce per a calcular la suma total dels
+        números.
+
+    </p>
+    <div class="answer">
+        <br> const arrayToReduce = [13, 7, 8, 21];
+        <br>
+        <br> const total = arrayToReduce.reduce(
+        <br> (accumulator, currentValue) => accumulator + currentValue, 0
+        <br> );
+
+    </div>
+
+    <script src="Level-1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 150px;
+            justify-content: center;
+        }
+
+        .answer {
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <title>1.4- Spread & Rest - Level - 3 </title>
+</head>
+
+<body>
+    <h1>1.4- Spread & Rest - Level - 3 </h1>
+
+    <strong> Exercici 5</strong>
+    <p> Spread en Funcions: Crea una funció que accepti tres arguments. Després, crea una array amb tres elements i
+        crida la
+        funció utilitzant l'operador spread amb aquesta array.
+    </p>
+    <div class="answer">
+        const names = ['Angeles', 'Jordi', 'Laura'];
+        <br>
+        <br> const printNames = (name1, name2, name3) => {
+        <br> console.log(name1);
+        <br> console.log(name2);
+        <br> console.log(name3);
+        }
+        <br>
+        <br> printNames(...names);
+
+
+    </div>
+
+    <strong> Exercici 6</strong>
+    <p>Fusionant Objectes amb Spread: Crea dos objectes amb propietats diferents. Utilitza l'operador spread per a
+        fusionar
+        aquests dos objectes en un de nou.
+    </p>
+    <div class="answer">
+        const user = {
+        <br> id: 1,
+        <br> name: "Alex",
+        <br> age: 28,
+        <br> email: "alex@example.com",
+        <br> };
+        <br>
+        <br> const settings = {
+        <br> theme: "dark",
+        <br> notifications: true,
+        <br> };
+        <br>
+        <br> const newUser = { ...user, ...settings };
+
+    </div>
+
+    <script src="Level-3.js"></script>
+</body>
+
+</html>
