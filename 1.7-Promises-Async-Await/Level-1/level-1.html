@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 150px;
+            justify-content: center;
+        }
+
+        .answer {
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <title>1.7 Promises & Async - Await - Level 1</title>
+</head>
+
+<body>
+    <h1>1.7 Promises & Async - Await - Level 1 </h1>
+
+    <strong> Exercise 1 </strong>
+    <p>
+        Creació d'una Promesa: Crea una promesa que es resolgui després de 2 segons i que retorni la cadena de text
+        'Hola, món'.
+    </p>
+    <div class="answer">
+        const newPromise = new Promise((resolve, reject) => {
+        <br> setTimeout(() => {
+        <br> const sucess = true;
+        <br> if (sucess) {
+        <br> resolve(`Hello World`);
+        <br> } else {
+        <br> reject(`This is an error message`);
+        <br> }
+        <br> }, 2000);
+        <br> });
+
+
+    </div>
+
+    <strong> Exercise 2 </strong>
+    <p>
+        Utilització d'una Promesa: Utilitza la promesa creada en l'exercici anterior. Crea un .then que imprimeixi el
+        resultat a la consola.
+    </p>
+    <div class="answer">
+        <br> newPromise
+        <br> .then((result) => {
+        console.log(result);
+        })
+        <br> .catch((error) => {
+        console.log(error);
+        });
+    </div>
+    <strong> Exercise 3 </strong>
+    <p>
+        Promesa amb reject: Crea una promesa que es resolgui després de 2 segons si l'input és igual a 'Hola', i que
+        la
+        rebutgi si l'input és qualsevol altra cosa.
+    </p>
+    <div class="answer">
+        const promiseInput = new Promise((resolve, reject) => {
+        <br> setTimeout(() => {
+        <br> const input = "Hola";
+        <br> if (input === "Hola") {
+        <br> resolve(`Promise resolved.`);
+        <br> } else {
+        <br> reject(`This is an error message`);
+        <br> }
+        <br> }, 2000);
+        <br> });
+        <br>
+        <br> promiseInput
+        <br> .then((result) => {
+        console.log(result);
+        })
+        <br> .catch((error) => {
+        console.log(error);
+        });
+
+    </div>
+    <strong> Exercise 4 </strong>
+    <p>
+        Ús de async/await: Escriu una funció asíncrona que utilitzi la funció await per a esperar el resultat de la
+        promesa
+        creada a l'exercici 1, i que després imprimeixi aquest resultat a la consola.
+    </p>
+    <div class="answer">
+        const usingPromise = async () => {
+        <br> try {
+        <br> const promiseResult = await newPromise;
+        console.log(promiseResult);
+        <br> } catch (error) {
+        <br> console.log(error);
+        }
+        };
+        <br>
+        <br> usingPromise();
+    </div>
+
+
+    <script src="Level-1.js"></script>
+</body>
+
+</html>

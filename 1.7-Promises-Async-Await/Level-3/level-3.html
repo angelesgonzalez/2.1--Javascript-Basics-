@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 150px;
+            justify-content: center;
+        }
+
+        .answer {
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <title>1.7 Promises & Async - Await - Level 3 </title>
+</head>
+
+<body>
+    <h1>1.7 Promises & Async - Await - Level 3 </h1>
+
+    <strong> Exercise</strong>
+    <p>
+        Promise.all: Crea dues promeses que es resolguin després de 2 i 3 segons, respectivament. Utilitza
+        Promise.all per a
+        esperar que ambdues promeses es resolguin, i imprimeix els resultats a la consola.
+    </p>
+    <div class="answer">
+
+        const waitingForPromises = async () => {
+        <br> try {
+        <br> const allPromises = await Promise.all([promise1, promise2]);
+        <br> console.log(allPromises);
+        }
+        <br> catch (error) {
+        <br> console.log(error);
+        <br> }
+        };
+        <br>
+        <br> waitingForPromises();
+
+    </div>
+
+
+
+    <script src="Level-3.js"></script>
+</body>
+
+</html>

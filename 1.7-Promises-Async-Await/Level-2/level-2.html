@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 150px;
+            justify-content: center;
+        }
+
+        .answer {
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <title>1.7 Promises & Async - Await - Level 2</title>
+</head>
+
+<body>
+    <h1>1.7 Promises & Async - Await - Level 2 </h1>
+
+    <strong> Exercise 5 </strong>
+    <p>
+        Gestió d'errors amb async/await: Modifica la funció de l'exercici 4 per a que capturi qualsevol possible
+        error
+        utilitzant un bloc try/catch.
+
+    </p>
+    <div class="answer">
+        const usingPromise = async () => {
+        <br> try {
+        <br> const promiseResult = await newPromise;
+        console.log(promiseResult);
+        <br> } catch (error) {
+        <br> console.log(error);
+        } };
+    </div>
+
+
+    <script src="Level-2.js"></script>
+</body>
+
+</html>
